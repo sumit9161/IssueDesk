@@ -1,0 +1,6 @@
+projectKey=Internal-Ticketing-System-frontend
+serverUrl=http://localhost:9000
+serverVersion=25.6.0.109173
+dashboardUrl=http://localhost:9000/dashboard?id=Internal-Ticketing-System-frontend
+ceTaskId=648cc6e5-7399-4427-a4f3-a2b7167a1f48
+ceTaskUrl=http://localhost:9000/api/ce/task?id=648cc6e5-7399-4427-a4f3-a2b7167a1f48

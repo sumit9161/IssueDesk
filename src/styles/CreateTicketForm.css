@@ -1,0 +1,140 @@
+.create-ticket-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px 28px; 
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.create-ticket-form:hover {
+  transform: scale(1.02);
+}
+
+.create-ticket-form h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #003366;
+  text-align: center;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+.create-ticket-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-ticket-form label {
+  margin: 8px 0 4px; 
+  font-weight: 600;
+  font-size: 15px;
+  color: #1e293b; 
+}
+
+.create-ticket-form input,
+.create-ticket-form select,
+.create-ticket-form textarea {
+  padding: 12px 14px;
+  border: 1.5px solid #cbd5e1; 
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  color: #344054;
+  background-color: #f8fafc;
+  font-family: inherit;
+  margin-bottom: 10px; 
+  box-sizing: border-box;
+}
+
+.create-ticket-form input:focus,
+.create-ticket-form select:focus,
+.create-ticket-form textarea:focus {
+  border-color: #2563eb; 
+  outline: none;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.4);
+  background-color: #ffffff;
+}
+
+.create-ticket-form textarea {
+  resize: vertical;
+  min-height: 100px;
+  line-height: 1.5;
+}
+
+.create-ticket-form select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #444 50%),
+    linear-gradient(135deg, #444 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(50% - 3px),
+    calc(100% - 15px) calc(50% - 3px),
+    calc(100% - 25px) 50%;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.create-ticket-form button {
+  margin-top: 18px; 
+  padding: 14px 0;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s;
+  user-select: none;
+  letter-spacing: 0.05em;
+}
+
+.create-ticket-form button:hover {
+  background-color: #1d4ed8;
+  box-shadow: 0 10px 26px rgba(29, 78, 216, 0.45);
+  transform: translateY(-3px);
+}
+
+.create-ticket-form button:active {
+  background-color: #1e40af;
+  box-shadow: 0 3px 10px rgba(30, 64, 175, 0.4);
+  transform: translateY(1px);
+}
+
+@media (max-width: 480px) {
+  .create-ticket-form {
+    max-width: 90%;
+    padding: 25px 20px;
+  }
+  .create-ticket-form button {
+    font-size: 15px;
+    padding: 12px 0;
+  }
+  .create-ticket-form label {
+    font-size: 14px;
+  }
+  .create-ticket-form input,
+  .create-ticket-form select,
+  .create-ticket-form textarea {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
+
+.create-ticket-form input:focus-visible,
+.create-ticket-form select:focus-visible,
+.create-ticket-form textarea:focus-visible,
+.create-ticket-form button:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}

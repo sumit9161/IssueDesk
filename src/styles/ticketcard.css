@@ -1,0 +1,114 @@
+.ticket-card {
+  background-color: #f9fafb;
+  border-radius: 10px;
+  padding: 18px 24px;
+  box-shadow: 0 2px 12px rgba(80, 158, 255, 0.08);
+  cursor: pointer;
+  user-select: none;
+  transition: box-shadow 0.22s, transform 0.17s;
+  border: 1.5px solid #e3e8f0;
+  margin-bottom: 18px;
+}
+
+.ticket-card:hover, 
+.ticket-card:focus-visible {
+  box-shadow: 0 8px 20px rgba(80, 158, 255, 0.14), 0 1.5px 2px #b8e0ff;
+  transform: translateY(-3px) scale(1.012);
+  outline: none;
+  border-color: #90cdf4;
+}
+
+.ticket-card p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #315179;
+  font-weight: 500;
+}
+
+.ticket-card strong {
+  font-weight: 700;
+  color: #0a3884;
+  letter-spacing: 0.01em;
+}
+
+.priority {
+  font-weight: 800;
+  padding: 3px 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  display: inline-block;
+  margin-left: 6px;
+  box-shadow: 0 2px 6px 0 rgba(80, 158, 255, 0.08);
+}
+
+.priority.low {
+  background-color: #e7fbe9;
+  color: #27b16a;
+  border: 1.5px solid #b6f6c9;
+}
+.priority.medium {
+  background-color: #fffbe2;
+  color: #db9806;
+  border: 1.5px solid #fae588;
+}
+.priority.high {
+  background-color: #fff1f1;
+  color: #ed384b;
+  border: 1.5px solid #ffd5d8;
+}
+.priority.critical {
+  background-color: #ffe8e6;
+  color: #d9213c;
+  border: 1.5px solid #ffafb0;
+}
+
+.status {
+  font-weight: 900;
+  padding: 3px 18px;
+  border-radius: 14px;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 8px;
+  letter-spacing: 0.08em;
+  box-shadow: 0 2px 8px 0 rgba(94, 234, 212, 0.07);
+  border: 1.5px solid #e4e9ee;
+}
+
+.status.new {
+  background-color: #e3edff;
+  color: #2779e2;
+  border-color: #bbd7f4;
+}
+.status.open {
+  background-color: #defdfd;
+  color: #289799;
+  border-color: #98ecea;
+}
+.status.inprogress {
+  background-color: #fff7d6;
+  color: #de8500;
+  border-color: #ffe9a7;
+}
+.status.onhold {
+  background-color: #fde3fd;
+  color: #c02cd5;
+  border-color: #f7befc;
+}
+.status.resolved {
+  background-color: #defeea;
+  color: #289b6a;
+  border-color: #abf7ce;
+}
+.status.closed {
+  background-color: #f0f4f9;
+  color: #57677a;
+  border-color: #dbe4ef;
+}
+.status.reopened {
+  background-color: #e7f3ff;
+  color: #338ddb;
+  border-color: #baddff;
+}
