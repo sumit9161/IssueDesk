@@ -12,6 +12,8 @@ pipeline {
             steps {
                     bat 'npm install'
                     bat 'npm run build'
+                    bat 'npm install -D @vitest/coverage-v8'
+
             }
         }
 
